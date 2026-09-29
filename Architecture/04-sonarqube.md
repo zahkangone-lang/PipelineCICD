@@ -65,7 +65,7 @@ services:
       - sonar_db_data:/var/lib/postgresql/data
 
   sonarqube:
-    image: sonarqube:community
+    image: sonarqube:lts-community
     container_name: sonarqube
     restart: always
     depends_on:
